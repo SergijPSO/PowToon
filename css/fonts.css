@@ -1,0 +1,35 @@
+@font-face {
+font-family: muller_regular;
+src: url("../assets/fonts/muller_regular.otf") format("opentype");
+}
+
+@font-face {
+font-family: muller_bold;
+src: url("../assets/fonts/muller_bold.otf") format("opentype");
+}
+
+@font-face {
+font-family: muller_medium;
+src: url("../assets/fonts/muller_medium.otf") format("opentype");
+}
+
+@font-face {
+font-family: visbycf_heavy;
+src: url("../assets/fonts/visbycf_heavy.otf") format("opentype");
+}
+
+@font-face {
+font-family: visbycf_bold;
+src: url("../assets/fonts/visbycf_bold.otf") format("opentype");
+}
+
+@font-face {
+font-family: visbycf_light;
+src: url("../assets/fonts/visbycf_light.otf") format("opentype");
+}
+
+@font-face {
+font-family: visbycf_thin;
+src: url("../assets/fonts/visbycf_thin.otf") format("opentype");
+}
+
