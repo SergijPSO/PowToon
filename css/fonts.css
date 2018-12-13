@@ -33,3 +33,12 @@ font-family: visbycf_thin;
 src: url("../assets/fonts/visbycf_thin.otf") format("opentype");
 }
 
+@font-face {
+font-family: jack_story;
+src: url("../assets/fonts/cfjack_story_regular.otf") format("opentype");
+}
+@font-face {
+font-family: visby_extra;
+src: url("../assets/fonts/visby_extra.otf") format("opentype");
+}
+

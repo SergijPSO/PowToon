@@ -1,49 +1,84 @@
 /* reset default browser styles */
 * {
-margin:0;
-padding:0;
+    margin:0;
+    padding:0;
 }
 /* reset default browser styles */
+
+/*All page content block styles*/
 #wrapper {
-width:1920px;
-margin:0 auto;
+    width:1920px;
+    margin:0 auto;
 }
+/*All page content block styles ENDS*/
+/*Logo page content block styles */
 .logo-picture {
-padding-top:10px;
+    padding-top:10px;
 }
 .logo_container{
-position:relative;
-width: 206px;
-height: 125px;
-background:#fff;
-border-radius: 10px;
-left:178px;
-transform: rotate(-7deg);/*TO DO add prefixes for browsers*/
-bottom:30px;
+    position:relative;
+    width: 206px;
+    height: 125px;
+    background:#fff;
+    border-radius: 10px;
+    left:178px;
+        -webkit-transform: rotate(-7deg);
+        -moz-transform: rotate(-7deg);
+        -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);/*TO DO add prefixes for browsers*/
+    bottom:30px;
 }
+/*Animation styles STARTS*/
+.logo_container:hover{
+    animation: colorchange 15s;
+    -webkit-animation: colorchange 15s;
+    -moz-transform: colorchange 15s;
+    -ms-transform: colorchange 15s;
+}
+@keyframes colorchange
+{
+    0%   {background: red;}
+    25%  {background: yellow;}
+    50%  {background: #add9b6;}
+    75%  {background: #ff8141;}
+    100% {background: red;}
+}
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+    0%   {background: red;}
+    25%  {background: yellow;}
+    50%  {background: blue;}
+    75%  {background: green;}
+    100% {background: red;}
+}
+/*Animation styles ENDS*/
+/*Logo page content block styles ENDS*/
+
+/*First content section styles Starts*/
 .main_content{
-width:1920px;
-height:1080px;
-background-image: url(../assets/img/powtoon.png);
-background-repeat: no-repeat;
+    width:1920px;
+    height:1080px;
+    background-image: url(../assets/img/powtoon.png);
+    background-repeat: no-repeat;
 }
 .text_container{
-width: 900px;
-position:relative;
-left:178px;
-top:170px;
-line-height:85px;
+    width: 900px;
+    position:relative;
+    left:178px;
+    top:170px;
+    line-height:85px;
 }
 .main_text_title{
-color:#44a09b;
-font-size: 32px;
-font-family: muller_bold;
-padding-bottom:3px;
+    color:#44a09b;
+    font-size: 32px;
+    font-family: muller_bold;
+    padding-bottom:3px;
 }
 .main_text{
-font-size: 62px;
-font-family: muller_regular;
+        font-size: 62px;
+        font-family: muller_regular;
 }
+/*Registration button and container styles*/
 .registration_container{
     position:relative;
     top:223px;
@@ -53,189 +88,249 @@ font-family: muller_regular;
     border-radius: 0 100px 100px 0;
 }
 .registr_button {
-position:relative;
-top:25px;
-left:192px;
-font-family: muller_bold;
-font-size:34pt;
-width: 494px;
-height: 66px;
-background-color: #ff8141;
-text-transform:uppercase;
-color:#ffffff;
-border:none;
-outline:none;
-border-radius:50px;
+    position:relative;
+    top:25px;
+    left:192px;
+    font-family: muller_bold;
+    font-size:34pt;
+    width: 494px;
+    height: 66px;
+    background-color: #ff8141;
+    text-transform:uppercase;
+    color:#ffffff;
+    border:none;
+    outline:none;
+    border-radius:50px;
 }
 .registr_button :hover {
-cursor:pointer;
+    cursor:pointer;
 }
 .registr_btn_txt{
-margin-top:5px;
+    margin-top:5px;
 }
 .registr_button:active {
-background-color:#f77431; 
+    background-color:#f77431; 
 }
 .register_date {
-position: relative;
-left:191px;
-padding-top: 25px;
-font-family:muller_medium;
-font-size:28px;
-color:#ff8141;
+    position: relative;
+    left:191px;
+    padding-top: 25px;
+    font-family:muller_medium;
+    font-size:28px;
+    color:#ff8141;
 }
-/*Scroll down triangle styles*/
+/*Registration button and container styles ENDS here*/
 
+/*Scroll down triangle styles starts*/
 .scroll_action {
-text-decoration:none;
+        text-decoration:none;
 }
 .scroll_title {
-/* position: relative; */
-margin-top:287px;
-text-align:center;
-font-family:visbycf_heavy;
-text-transform:uppercase;
-font-size:17px;
-color:#fff;
+    margin-top:287px;
+    text-align:center;
+    font-family:visbycf_heavy;
+    text-transform:uppercase;
+    font-size:17px;
+    color:#fff;
 }
-
+/*Scroll triangle styles starts*/
 .triangle { 
-position: absolute;
-margin-top: 13px;
-margin-left:928px;
-width: 60px;
-transform: rotate(180deg);
+    position: absolute;
+    margin-top: 13px;
+    margin-left:928px;
+    width: 60px;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 .triangle>div { 
-width: 60px;
-height: 7px;
-background: #ffff;
+    width: 60px;
+    height: 7px;
+    background: #ffff;
 }
-
 .triangle>div:before {
-content: " ";
-display: block;
-width: 41px;
-height: 7px;
-background: #ffff;
--webkit-transform: rotate(43deg);
--moz-transform: rotate(43deg);
--ms-transform: rotate(43deg);
-transform: rotate(43deg);
-position: absolute;
-top: -15px;
-right: -4px;
+    content: " ";
+    display: block;
+    width: 41px;
+    height: 7px;
+    background: #ffff;
+        -webkit-transform: rotate(43deg);
+        -moz-transform: rotate(43deg);
+        -ms-transform: rotate(43deg);
+    transform: rotate(43deg);
+    position: absolute;
+    top: -15px;
+    right: -4px;
 }
 .triangle>div:after {
-content: " ";
-display: block;
-width: 41px;
-height: 7px;
-background: #ffff;
--webkit-transform: rotate(-43deg);
--moz-transform: rotate(-43deg);
--ms-transform: rotate(-43deg);
-transform: rotate(-43deg);
-position: absolute;
-top: -15px;
-left: -4px;
+    content: " ";
+    display: block;
+    width: 41px;
+    height: 7px;
+    background: #ffff;
+        -webkit-transform: rotate(-43deg);
+        -moz-transform: rotate(-43deg);
+        -ms-transform: rotate(-43deg);
+    transform: rotate(-43deg);
+    position: absolute;
+    top: -15px;
+    left: -4px;
 }
-
+/*Scoll triangle styles ENDS here*/
 /*Scroll down triangle styles ENDS here*/
+/*First content section styles ENDS here*/
 
-/*Second section*/
+/*Second section styles starts*/
 .iformative_container{
-height: 915px;
-display:flex;
-flex-direction:row;
+    height: 915px;
+    display:flex;
+    flex-direction:row;
 }
+/*Left side container styles STARTS here*/
 .leftside_container{
-position: relative;
-top: -1px;
-width: 56%;
-/* background-color: #f77431 */
-background-image: url(../assets/img/bcg_webinar.png);
+    position: relative;
+    top: -1px;
+    width: 56%;
+    background-image: url(../assets/img/bcg_webinar.png);
 }
-/*Right container styles*/
+/*Left side container styles STARTS here*/
 
-/* Description_styles */
-.description_title{
-font-size:42px;
-color:#3a4a62;
-text-transform:uppercase;
-font-family: visbycf_bold;
-bottom:16px;
-position:relative;
-}
-/* Description_styles */
-.container_description{
-font-family: visbycf_light;
-width: 587px;
-height: 600px;
-position:relative;
-top:130px;
-left:130px;
-line-height:40px;
-}
-.description_points {
-font-size:22px; 
-list-style-image: url("../assests/imgarrow.png");
-}
-.description_items{
-list-style-image: url("../assets/img/arrow.png");
-}
-.plus_heart{
-margin-top:20px;
-list-style-image: url("../assets/img/heart.png");
-font-family: visbycf_thin;
-}
-.rightside_container{
-width: 44%;
-}
-.right_button{
-margin-top: 133px;
-margin-right:40px;
-}
-/*Right container styles*/
-/*Second section*/
-
-.coments_container {  
-position:relative;
-top:-1px;
-height:205px;
-background-color:#273d50;
-font-family: visbycf_bold;
-font-weight:700;
-font-size:55px;
-text-transform:uppercase;
-color:#fff;
-text-align:center;
-}
-.comments_text{
-padding-top:80px;
-}
-/*Play*/
+/*Play button section STARTS here*/
 .circle{
-top:40%;
-margin:0 auto;
-width: 180px;
-height: 180px;
-background-color:rgba(0, 0, 0, 0.5);
-border-radius:100%;
-position:relative;
+    top:40%;
+    margin:0 auto;
+    width: 180px;
+    height: 180px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius:100%;
+    position:relative;
 }
-
 .triangle_play {
-cursor:pointer;
-left:40%;
-top:30%;
-width: 0;
-height: 0;
-position:absolute;
-border-top: 35px solid transparent;
-border-left: 50px solid #fff;
-border-bottom: 35px solid transparent;
+    cursor:pointer;
+    left:40%;
+    top:30%;
+    width: 0;
+    height: 0;
+    position:absolute;
+    border-top: 35px solid transparent;
+    border-left: 50px solid #fff;
+    border-bottom: 35px solid transparent;
 }
 .triangle_play :hover{
-cursor:pointer;
+    cursor:pointer;
 }
+/*Play button section ENDS here*/
+
+/*Webinar arrow and text play_me container*/
+/*Webinar arrow and text play_me container ENDS*/
+.play_me{
+    margin-top:337px;
+    margin-left:700px;
+    width: 400px;
+    height: 300px;
+}
+.arrow_img{
+    position:relative;
+    top: 25px;
+    right: 127px;
+}
+.webinar_text{
+    transform: rotate(10deg);
+    font-family: jack_story;
+    font-size:24px;
+    width: 200px;
+    position:absolute;
+    letter-spacing: 5px;
+}
+.webinar_first_line {
+        margin-left:20px;
+}
+.webinar_third_line {
+    margin-left:9px;
+}
+/*Webinar arrow and text play_me container ENDS*/
+/*Left side container styles ENDS here*/
+
+/*Right container styles STARTS*/
+
+/* Description_styles STARTS */
+.description_title{
+    font-size:42px;
+    color:#3a4a62;
+    text-transform:uppercase;
+    font-family: visbycf_bold;
+    bottom:16px;
+    position:relative;
+}
+.container_description{
+    font-family: visbycf_light;
+    width: 587px;
+    height: 600px;
+    position:relative;
+    top:130px;
+    left:130px;
+    line-height:40px;
+}
+.description_points {
+    font-size:22px; 
+    list-style-image: url("../assests/imgarrow.png");
+}
+.description_items{
+    list-style-image: url("../assets/img/arrow.png");
+}
+.plus_heart{
+    margin-top:20px;
+    list-style-image: url("../assets/img/heart.png");
+    font-family: visbycf_thin;
+}
+/*Description styles ENDS here*/
+/*Right side container button styles STARTS here*/
+.registr_button2 {
+    position:relative;
+    top:120px;
+    left:105px;
+    font-family: muller_bold;
+    font-size:34pt;
+    width: 494px;
+    height: 66px;
+    background-color: #ff8141;
+    text-transform:uppercase;
+    color:#ffffff;
+    border:none;
+    outline:none;
+    border-radius:50px;
+}
+.registr_button2 :hover {
+    cursor:pointer;
+}
+.registr_btn2_txt{
+    margin-top:5px;
+}
+.registr_button2:active {
+    background-color:#f77431; 
+}
+/*Right side container button styles STARTS here*/
+.rightside_container{
+    width: 44%;
+}
+/*Right container styles*/
+/*Second section styles ENDS here*/
+/*Comments container STARTS here*/
+.coments_container {  
+    position:relative;
+    top:-1px;
+    height:205px;
+    background-color:#273d50;
+    font-family: visby_extra;
+    font-size:55px;
+    text-transform:uppercase;
+    color:#fff;
+    text-align:center;
+    font-style:bold;
+}
+.comments_text{
+    padding-top:80px;
+}
+/*Comments container ENDS here*/
+
