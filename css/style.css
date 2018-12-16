@@ -7,8 +7,12 @@
 
 /*All page content block styles*/
 #wrapper {
+    /* max-width:1920px;
+    min-width:1200px; */
     width:1920px;
-    margin:0 auto;
+    /* width: 100%; */
+    margin: 0 auto;
+    /* background-size:cover; */
 }
 /*All page content block styles ENDS*/
 /*Logo page content block styles */
@@ -30,10 +34,10 @@
 }
 /*Animation styles STARTS*/
 .logo_container:hover{
+        -webkit-animation: colorchange 15s;
+        -moz-transform: colorchange 15s;
+        -ms-transform: colorchange 15s;
     animation: colorchange 15s;
-    -webkit-animation: colorchange 15s;
-    -moz-transform: colorchange 15s;
-    -ms-transform: colorchange 15s;
 }
 @keyframes colorchange
 {
@@ -56,7 +60,7 @@
 
 /*First content section styles Starts*/
 .main_content{
-    width:1920px;
+    /* width:1920px; */
     height:1080px;
     background-image: url(../assets/img/powtoon.png);
     background-repeat: no-repeat;
@@ -244,7 +248,7 @@
     letter-spacing: 5px;
 }
 .webinar_first_line {
-        margin-left:20px;
+    margin-left:20px;
 }
 .webinar_third_line {
     margin-left:9px;
@@ -288,7 +292,7 @@
 /*Right side container button styles STARTS here*/
 .registr_button2 {
     position:relative;
-    top:120px;
+    top:155px;
     left:105px;
     font-family: muller_bold;
     font-size:34pt;
@@ -334,3 +338,124 @@
 }
 /*Comments container ENDS here*/
 
+@media screen and (max-width:1280px) {
+    #wrapper{
+        width: 1280px;
+    }
+    .logo_container{
+        left:126px;
+        height: 70px;
+        width: 130px;
+        bottom:14px;
+    }
+    .logo-picture{
+        width:94%;
+        margin-left:5px;
+        padding-top:0;
+    }
+    .main_content {
+    width: 1280px;
+    height: 720px;
+    background-size: contain;
+    }
+    .text_container{
+        left:126px;
+        top: 130px;
+        line-height: 54px;
+    }
+    .main_text_title{
+        font-size:21px;
+    }
+    .main_text{
+        font-size:40px;
+    }
+    .registration_container{
+        width: 530px;
+        height: 140px;
+        top: 172px;
+    }
+    .register_date{
+        font-size:19px;
+        left:78px;
+        padding-top:31px;
+    }
+    .registr_button {
+        top:10px;
+        width: 330px;
+        height: 42px;
+        left:82px;
+    }
+    .registr_btn_txt, .registr_btn2_txt{
+        font-size:23px;
+    }
+    .triangle{
+        margin-left:47.5%;
+    }
+    .scroll_title{
+        margin-top: 190px;
+    }
+    .iformative_container{
+        width: 1280px;
+        height: 600px;
+    }
+    .leftside_container{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height:600px;
+        width: 725px;
+    }
+    .play_me{
+        margin-left: 452px;
+        margin-top: 226px;
+    }
+    .circle{
+        width: 120px;
+        height: 120px;
+    }
+    .triangle_play{
+        top:38%;
+        border-top: 17px solid transparent;
+        border-left: 30px solid #fff;
+        border-bottom: 17px solid transparent;
+    }
+    .arrow_img{
+        width:53%;   
+        right:47%;
+        top:15px;
+    }
+    .webinar_text{
+        width: 160px;
+        font-size:14px;
+        letter-spacing: 3px;
+    }
+    .rightside_container{
+        height: 600px;
+        height: 445px;
+    }
+    .container_description{
+        top:88px;
+        left:85px;
+        width:450px;
+        line-height:27px;
+    }
+    .description_title{
+        font-size:28px;
+    }
+    .description_items, .plus_heart{
+        font-size: 15px;
+    }
+    .registr_button2 {
+        top:-136px;
+        left:60px;
+        width: 330px;
+        height: 42px;
+    }
+    .coments_container{
+        width: 1280px;
+        height: 140px;
+        font-size:37px;
+    }
+    .comments_text{
+        padding-top: 65px;
+    }
+}
